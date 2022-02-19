@@ -13,9 +13,24 @@
             Your personal information
         </p>
         <form id="survey-form">
+            <!-- id="name-label", id="email-label", and id="number-label". -->
+            <label for="name" id="name-label">Name:</label>
             <input id="name" type="text" name="name" placeholder="Enter Your Name Here" required>
+            <label for="email" id="email-label">Email:</label>
             <input id="email" type="email" name="email" placeholder="Enter your E-mail" required>
-            <input id="number" type="number" name="number" placeholder="Age" max="40" min="18"> 
+            <label for="number" id="number-label">Age:</label>
+            <input id="number" type="number" name="number" placeholder="Age" max="40" min="18">
+            <select id="dropdown">
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select> 
+            <input type="radio" name="radio" value="a">
+            <input type="radio" name="radio" value="b">
+
+            <input type="checkbox" name="" id="" value="c">
+            <input type="checkbox" name="" id="" value="d">
+
+
         </form>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
         </script>
